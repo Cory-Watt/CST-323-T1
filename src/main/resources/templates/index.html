@@ -22,13 +22,13 @@
                     <td th:text="${user.name}"></td>
                     <td th:text="${user.email}"></td>
                     <td>
-                        <a th:href="@{/edit/{id}(id=${user.id})}" class="btn btn-primary">Edit</a>
-                        <a th:href="@{/delete/{id}(id=${user.id})}" class="btn btn-danger">Delete</a>
+                        <a th:href="@{/users/edit/{id}(id=${user.id})}" class="btn btn-primary">Edit</a>
+                        <a th:href="@{/users/delete/{id}(id=${user.id})}" class="btn btn-danger">Delete</a>
                     </td>
                 </tr>
             </tbody>
         </table>
-        <a href="/add" class="btn btn-success">Add User</a>
+        <a href="/users/add" class="btn btn-success">Add User</a>
     </div>
 </body>
 </html>
