@@ -9,4 +9,4 @@ public class HomeController {
     public String home() {
         return "redirect:/users/"; // redirect to users listing
     }
-}
+} 

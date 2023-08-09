@@ -57,7 +57,7 @@ public class UserController {
         userRepository.save(user);
         return "redirect:/";
     }
-
+  
     @GetMapping("/delete/{id}")
     public String deleteUser(@PathVariable int id) {
         userRepository.deleteById(id);
